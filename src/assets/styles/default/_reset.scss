@@ -1,0 +1,26 @@
+@import 'vars';
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: $font-size;
+  font-family: $corporate-font;
+}
+
+p {
+  font-size: $font-size;
+  margin-bottom: 8px;
+}
+
+ul {
+  list-style: none;
+}
+
+abbr[title] {
+  text-decoration: none;
+}

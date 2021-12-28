@@ -1,0 +1,25 @@
+// BREAKPOINTS
+$mobile-size: 320px;
+$tablet-size: 768px;
+$desktop-size: 1200px;
+
+// MEDIA QUERIES
+$mobile: '(max-width: #{$tablet-size})';
+$tablet: '(min-width: #{$tablet-size})';
+$desktop: '(min-width: #{$desktop-size})';
+
+// LAYOUT PADDINGS
+$mobile-padding: 14px;
+$tablet-padding: 20px;
+$desktop-padding: 25px;
+
+// COLORS
+$white: #fff;
+$blue: #275a9d;
+$blue-corporate: #100B1E;
+$black: #333;
+$purple: #5748AF;
+
+// FONTS
+$corporate-font: 'Manrope', sans-serif;
+$font-size: 16px;

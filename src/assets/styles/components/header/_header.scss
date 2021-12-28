@@ -1,0 +1,67 @@
+.header {
+  position: relative;
+  z-index: 5;
+}
+
+.header-wrapper {
+  position: fixed;
+  height: 60px;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background: rgba(0, 0, 0, 0.001);
+  transition: background 0.2s ease-out;
+  &.scroll-in {
+    background: $blue-corporate;
+  }
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 14px;
+}
+
+.logo-wrapper {
+  z-index: 1;
+}
+
+.logo {
+  height: 34px;
+}
+
+.logo-name {
+  display: none;
+}
+
+@media #{$tablet} {
+  .header-content {
+    padding: 0 20px;
+  }
+  
+  .logo-name {
+    display: inline;
+  }
+}
+@media #{$desktop} {
+  .header-wrapper {
+    height: 124px;
+    transition: 0.2s ease-out;
+    &.scroll-in {
+      height: 60px;
+    }
+  }
+  .header-content {
+    height: auto;
+    padding: 0;
+    max-width: $desktop-size;
+    margin: auto;
+  }
+  .logo {
+    z-index: initial;
+    height: auto;
+  }
+}

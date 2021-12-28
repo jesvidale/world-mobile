@@ -1,0 +1,34 @@
+@import 'vars';
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 0 $mobile-padding;
+  max-width: $desktop-size;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media #{$tablet} {
+  .wrapper {
+    padding: 0 $tablet-padding;
+  }
+}
+
+@media #{$desktop} {
+  .wrapper {
+    padding: 0 $desktop-padding;
+  }
+}

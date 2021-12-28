@@ -1,0 +1,76 @@
+.parallax-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.parallax-bg-wrapper {
+  height: 100%;
+  background-color: $blue;
+  position: relative;
+  overflow: hidden;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 130%;
+    height: 100%;
+    left: -50%;
+    right: -50%;
+    margin: auto;
+    background: radial-gradient(ellipse at center, $blue 0%, $blue 45%, #081c34 100%);
+  }
+}
+
+.parallax-bg {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.parallax-bg-1 {
+  background-image: url(../../assets/img/mountain1.png);
+  bottom: 54px;
+}
+
+.parallax-bg-2 {
+  background-image: url(../../assets/img/mountain2.png);
+}
+
+.parallax-bg-3 {
+  background-image: url(../../assets/img/cloud.png);
+}
+
+.parallax-bg-4 {
+  background-color: $white;
+  bottom: -98%;
+}
+
+@media #{$tablet} {
+  .parallax-bg-wrapper {
+    height: 106vw;
+    max-height: 1000px;
+  }
+}
+
+@media #{$desktop} {
+  .parallax-bg-wrapper {
+    height: 90vw;
+    max-height: 1300px;
+  }
+}
+
+@media (min-width:1600px) {
+  .parallax-bg-wrapper {
+    max-height: initial;
+    height: 81.25vw;
+  }
+}
