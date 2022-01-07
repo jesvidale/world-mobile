@@ -40,12 +40,10 @@ const scrollHandler = () => {
   }
   const setVisibleSection = (scrolled) => {
     const getActiveSection = () => {
-      console.log(userAgent.device)
       const section = Math.floor(scrolled/userAgent.height * userAgent.device.factor)
       return section < 2 ? section : 1
     }
     const activeSection = getActiveSection();
-    console.log('activeSecton', activeSection)
     const sections = document.getElementsByClassName('section');
     const sectionsList = Array.prototype.slice.call(sections, 0)
     sectionsList.filter((section, index) => {
