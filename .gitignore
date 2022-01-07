@@ -1,0 +1,28 @@
+# Dependency directories
+node_modules/
+src/node_modules/
+jspm_packages/
+
+# TypeScript v1 declaration files
+typings/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Output of 'npm pack'
+*.tgz
+
+# Build generate
+dist
+
+# coverage report
+coverage
+
+# jest snapshots
+__snapshots__
+
+# vscode config
+.vscode/
