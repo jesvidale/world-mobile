@@ -1,10 +1,10 @@
 .button {
   min-width: 170px;
-  height: 32px;
+  height: 38px;
+  font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
   font-weight: 200;
   color: $white;
   background-color: $purple;
@@ -12,5 +12,12 @@
   cursor: pointer;
   &:hover {
     background-color: darken($color: $purple, $amount: 5);
+  }
+}
+
+@media #{$desktop} {
+  .button {
+    height: 32px;
+    font-size: 12px;
   }
 }

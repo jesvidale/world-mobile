@@ -8,19 +8,8 @@
 
 .parallax-bg-wrapper {
   height: 100%;
-  background-color: $blue;
   position: relative;
   overflow: hidden;
-  &:after {
-    content: '';
-    position: absolute;
-    width: 130%;
-    height: 100%;
-    left: -50%;
-    right: -50%;
-    margin: auto;
-    background: radial-gradient(ellipse at center, $blue 0%, $blue 45%, #081c34 100%);
-  }
 }
 
 .parallax-bg {
@@ -34,6 +23,21 @@
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center bottom;
+}
+
+.parallax-bg-0 {
+  background-color: $blue;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    left: -50%;
+    right: -50%;
+    margin: auto;
+    background: radial-gradient(ellipse at center, $blue 0%, $blue 45%, #081c34 100%);
+    clip-path: inset(0 0 50% 0);
+  }
 }
 
 .parallax-bg-1 {
